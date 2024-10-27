@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace game1401_la_starter
 {
-   internal class Venusaur : Pokemon
+    internal class Venusaur : Pokemon
     {
         public Venusaur()
         {
@@ -18,7 +18,28 @@ namespace game1401_la_starter
 
         override public void Attack()
         {
-            Console.WriteLine("This is Venu's Attack");
+            //Console.WriteLine("This is Venu's Attack");
+
+            //Venu's Turn:
+            Console.WriteLine("Its the Venu's turn");
+            Console.WriteLine("Press N to Attack or M to Heal");
+
+            string enemyChoice = Console.ReadLine();
+
+            if (enemyChoice == "N")
+            {
+                health -= attackPower;
+                Console.WriteLine($"The Dragon got a bit Hurt itseems {attackPower}");
+            }
+
+            else if (enemyChoice == "M")
+            {
+                health += pokeHeal;
+                Console.WriteLine($"Venusaur has been loaded now and another Challenge arises for the Player {pokeHeal}");
+            }
+
         }
-   }
+
+    }
 }
+
