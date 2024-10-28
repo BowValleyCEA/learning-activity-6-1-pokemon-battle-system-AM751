@@ -21,6 +21,7 @@ namespace game1401_la_starter
         protected float health = 100f;
         protected float pokeBeat = 5f;
         protected float pokeHeal = 3f;
+ 
         protected Types pokemonType;
 
 

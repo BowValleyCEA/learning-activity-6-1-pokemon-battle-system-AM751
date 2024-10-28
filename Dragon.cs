@@ -42,8 +42,7 @@ namespace game1401_la_starter
             }
         }
 
-        // override attack function from parent
-
-       
+        
+        // override attack function from parent      
     }
 }
